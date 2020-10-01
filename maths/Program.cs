@@ -26,7 +26,6 @@ namespace maths
             double posFrac = posNumerator / (2 * a);
             double negFrac = negNumerator / (2 * a);
             //float j = Math.Sqrt(i);
-            int y = 0;
             if (posFrac < 0 && negFrac < 0)
                 return false;
             else
@@ -52,17 +51,34 @@ namespace maths
             double distance = Math.Sqrt(distSqrd);
             return distance;
         }
+        //𝐼𝑛𝑛𝑒𝑟(𝑃,𝑄) = 𝑃↓𝑥𝑄↓𝑥 + 𝑃↓𝑦𝑄↓𝑦 + 𝑃↓𝑧𝑄↓z
+        static float Func5(Vector3 Point1, Vector3 point2)
+        {
+            float midX = Point1.X * point2.X;
+            float midY = Point1.Y * point2.Y;
+            float midZ = Point1.Z * point2.Z;
+            float inner = midX + midY + midZ;
+            return inner;
+        }
+        //𝐷(𝑃, 𝑋0) = (𝑎𝑥↓0+𝑏𝑦↓0+𝑐𝑧↓𝑜+𝑑)/√(𝑎^2+𝑏^2+𝑐^2)
+        //static double Func6()
         static void Main(string[] args)
         {
             Console.WriteLine(Func1(5));
+
             if (Func2(5,14,6))
                 Console.WriteLine("function 2 has no roots");
             else
                 Console.WriteLine("function 2 has roots");
             Console.WriteLine(Func3(5,10,15));
+
             Vector2 pointOne = new Vector2(10, 10);
             Vector2 pointTwo = new Vector2(20, 20);
             Console.WriteLine(Func4(pointOne,pointTwo));
+
+            Vector3 pointThree = new Vector3(1, 2, 8);
+            Vector3 pointFour = new Vector3(1, 5, 7);
+            Console.WriteLine(Func5(pointThree,pointFour));
         }
     }
 }

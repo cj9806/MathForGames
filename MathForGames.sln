@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathFormulas", "maths\MathFormulas.csproj", "{4D0F14FD-F839-403E-A11A-FDE68D9C16C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrigonomitryPractice", "TrigonomitryPractice\TrigonomitryPractice.csproj", "{B9F59BE9-BAF5-4FA0-B1AE-F1CFA8BB666C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrigonomitryPractice", "TrigonomitryPractice\TrigonomitryPractice.csproj", "{B9F59BE9-BAF5-4FA0-B1AE-F1CFA8BB666C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointsAndVectors", "PointsAndVectors\PointsAndVectors.csproj", "{39217186-1B12-4CF3-A01B-94B0F50B912C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B9F59BE9-BAF5-4FA0-B1AE-F1CFA8BB666C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9F59BE9-BAF5-4FA0-B1AE-F1CFA8BB666C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9F59BE9-BAF5-4FA0-B1AE-F1CFA8BB666C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39217186-1B12-4CF3-A01B-94B0F50B912C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39217186-1B12-4CF3-A01B-94B0F50B912C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39217186-1B12-4CF3-A01B-94B0F50B912C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39217186-1B12-4CF3-A01B-94B0F50B912C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
